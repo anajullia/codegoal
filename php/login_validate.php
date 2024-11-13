@@ -2,7 +2,7 @@
 session_start(); // Inicia a sessão ou retoma a sessão existente
 
 // Credenciais fixas (para fins de demonstração)
-$valid_username = "123";
+$valid_username = "Ana";
 $valid_password_hash = md5("123"); // Senha "cps@senha" criptografada em MD5
 
 // Recebe dados do formulário

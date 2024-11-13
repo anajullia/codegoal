@@ -1,0 +1,70 @@
+.divprod {
+    margin-left: 15px;
+  }
+  
+  .checkprod {
+    margin-left: 0px !important;
+    position: relative;
+    width: 200px;
+    height: 30px;
+    margin-top: 10px;
+  }
+
+  .body{
+    overflow-x: hidden;
+    width: 100vw;
+  }
+  
+  .containercompra {
+    margin-left: 17vw;
+  }
+  
+  .titulo {
+    margin-left: -35px;
+  }
+  
+  .labelprod{
+      text-align: center !important;
+      width: 200px;
+      font-size: 1.22rem;
+      margin-top: 5px;
+  }
+  
+  .labelpreco{
+      font-weight: bolder;
+      font-size: 2rem !important;
+      margin-top: 0 !important;
+  }
+  .divbotoes{
+      position:absolute;
+      margin-top: -83px;
+      margin-left: 880px;
+  }
+
+.sair, .ola, .titulo{
+    margin-left: 1vw;
+}
+
+.sair{
+    margin-right:2vw
+}
+
+.navbar{
+    width: 100vw;
+    background-color: #E4E4E4;
+}
+
+.banner, .imgbanner{
+    width: 100vw;
+    margin-left: 0;
+}
+
+.categoria{
+    margin-top: 2vh;
+    margin-left: 1vw;
+    font-size: 20pt;
+}
+
+.imgctg{
+    height: 10vh
+}
