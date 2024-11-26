@@ -1,66 +1,66 @@
-<?php
-session_start(); // Inicia a sessão ou retoma a sessão existente
-
-// Verifica se o usuário está autenticado
-if (!isset($_SESSION['loggedin']) || $_SESSION['loggedin'] !== true) {
-    header("Location: index.php"); // Redireciona para a página de login se não estiver autenticado
-    exit(); // Garante que o redirecionamento ocorra e o script pare aqui
-}
-
-$produtos_selecionados = isset($_COOKIE['produtos_selecionados']) ? explode(',', $_COOKIE['produtos_selecionados']) : [];
-?>
-
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Loja de Produtos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Collections Page</title>
+  <link rel="stylesheet" href="../style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 </head>
+<body>
 
-<body class="body">
-    <!--<h1 class="titulo">Bem-vindo à CodeGoal</h1>-->
-    <!--<p class="ola">Olá, <?php echo htmlspecialchars($_SESSION['username']); ?>!</p>-->
-    <nav class="navbar">
-        <div class="container-fluid">
-            <img src="../assets/codelogo.png" class="logonav">
-            <a href="logout.php" class="sair">Sair</a> <!-- Link para fazer logout -->
-        </div>
-    </nav>
+  <!-- Navbar -->
+  <div class="navbar">
+    <div class="navbar-logo">CodeGoal</div>
+  </div>
 
-    <div class="banner">
-        <img src="../assets/banner.png" class="imgbanner">
+  <!-- Banner Section -->
+  <div class="banner">
+    <h1>Coleção Brasil</h1>
+    <h2>Já disponível</h2>
+  </div>
+
+  <!-- Explore Collections -->
+  <section class="collection-section">
+    <h2>Explore nossas coleções</h2>
+    <div class="collection-grid">
+      <div class="collection-card">
+        <img src="path-to-image.jpg" alt="Seleção">
+        <div class="overlay">Seleção</div>
+      </div>
+      <div class="collection-card">
+        <img src="path-to-image.jpg" alt="Clubes">
+        <div class="overlay">Clubes</div>
+      </div>
+      <div class="collection-card">
+        <img src="path-to-image.jpg" alt="Diversos">
+        <div class="overlay">Diversos</div>
+      </div>
     </div>
+  </section>
 
-    <p class="categoria"> Explore nossas categorias</p>
-    <div class="containercompra d-flex flex-row gap-5">
-        <div class="form-check d-flex flex-column divprod">
-            <div class="imgprod">
-                <img src="../assets/pele.png" style="imgctg" />
-            </div>
-            <label class="form-check-label labelprod">Camisa Goleiro São Paulo Retrô - 1988</label>
-        </div>
-
-        <div class="form-check d-flex flex-column divprod">
-            <div class="imgprod">
-                <img src="../assets/pele.png" style="imgctg" />
-            </div>
-            <label class="form-check-label labelprod">Camisa Goleiro São Paulo Retrô - 1988</label>
-        </div>
-
-        <div class="form-check d-flex flex-column divprod">
-            <div class="imgprod">
-                <img src="../assets/pele.png" style="imgctg" />
-            </div>
-            <label class="form-check-label labelprod">Camisa Goleiro São Paulo Retrô - 1988</label>
-        </div>
+  <!-- Products Section -->
+  <section class="product-section">
+    <h2>Nossa seleção</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="path-to-product.jpg" alt="São Paulo 1958">
+        <div class="product-title">São Paulo 1958</div>
+        <div class="product-price">R$ 299,99</div>
+      </div>
+      <div class="product-card">
+        <img src="path-to-product.jpg" alt="Manga Longa Flamengo">
+        <div class="product-title">Manga Longa Flamengo</div>
+        <div class="product-price">R$ 359,99</div>
+      </div>
+      <div class="product-card">
+        <img src="path-to-product.jpg" alt="Botafogo Mauricio">
+        <div class="product-title">Botafogo Mauricio</div>
+        <div class="product-price">R$ 199,99</div>
+      </div>
     </div>
-
-
+  </section>
 
 </body>
-
 </html>
